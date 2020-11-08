@@ -1,0 +1,11 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+## This is the landing page for my website - 
+### Ideas - Include a few details about me 
