@@ -5,6 +5,8 @@ navbar:
   right:
     - text: "Resume"
       href: Resume.html
+    - text: "Dashboard"
+      href: Dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<pallavi.krishnamurthy@columbia.edu>
     - icon: fa-github fa-lg
