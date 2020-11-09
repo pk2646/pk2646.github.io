@@ -8,7 +8,7 @@ navbar:
     - text: "plotly"
       href: plotly.html
     - text: "Dashboard"
-      href: Dashboard.html
+      href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<pallavi.krishnamurthy@columbia.edu>
     - icon: fa-github fa-lg
