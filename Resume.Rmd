@@ -4,7 +4,67 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
-## This page has all the information on my resume. 
+## EDUCATION
+
+### MAILMAN SCHOOL OF PUBLIC HEALTH - COLUMBIA UNIVERSITY
+
+Master of Public Health (MPH) in Epidemiology and Certificate in Comparative Effectiveness and Outcomes Research (CEOR)
+•	Recipient, Dean’s Merit Scholarship
+•	Relevant coursework: Decision Analysis for Clinical and Public Health Practice, Data Science in R, Health Economics, Large Scale Data Analysis, Statistical Computing with SAS, Observational Epidemiology, Analysis of Categorical Data, Consulting Practice
+
+### V S DENTAL COLLEGE AND HOSPITAL
+
+Bachelor of Dental Surgery (BDS) GPA: 3.89/4
+
+## PROFESSIONAL EXPERIENCE 
+
+### SUMMER FELLOW | CENTER FOR THE EVALUATION OF VALUE AND RISK IN HEALTH (CEVR)
+
+•	Designed and conducted an original cost-effectiveness analysis (CEA) with Decision tree and Markov modelling, which culminated in a manuscript currently in the pipeline for publication
+•	Interpreted and extracted data on over 100 CEA articles, screened 550 abstracts and triaged 60 articles for the CEA-Registry
+•	Collecting data for a pilot project to identify the inclusion of ‘genericization’ in CEA
+
+### TEACHING ASSISTANT - GLOBAL HEALTH & DEVELOPMENT | COLUMBIA UNIVERSITY
+
+•	Providing academic support to over 400 first year graduate students by acting as a liaison between students and faculty 
+
+### HEALTH RESEARCH TRAINING PROGRAM (HRTP) INTERN | NYC-DOHMH
+
+•	Developing instruments and tools to streamline data analysts’ workflow by automatically and efficiently structuring unstructured datasets authored by clinicians for the Employee Smoking Cessation Program (ESCAPE) 
+•	Assisting in conducting interviews during tobacco counselling sessions for NY city employees
+
+### GRADUATE RESEARCH ASST | COLUMBIA UNIVERSITY
+
+•	Conducted a study exploring the association between socio-economic status and marijuana advertisements, and related trends in time, using Monitoring the Future (MTF) data in SAS
+•	Cleaned MTF data into 44482 usable observations with 791 variables and analyzed using polytomous logistic regression model
+
+### RESEARCH ASST | DR. SRIKANTH, UNIVERSITY OF OTTAWA, CANADA & DR. HARIKIRAN, RV DENTAL COLLEGE
+
+•	Developed and designed policy brief on India’s strategic health priorities and conducted a comparative analysis with 6 developed countries namely USA, UK, Australia, Canada, Sweden and France to influence foreign policies  
+•	Co-authored the report ‘A consultative meeting on International Health Regulations (IHR): Bangalore and Indian Perspective of a global challenge’, used in advocacy and outreach efforts nationally (India)
+•	Effectively conducted a systematic literature review and drafted the papers ‘Infectious disease Surveillance and Universal Health Coverage and BRICS - India’s Role in Regional and Global health’
+
+### DENTAL SURGEON | PRAKRUTHI DENTAL CLINIC
+
+•	Diagnosed and clinically treated more than 1000 cases of various oral diseases
+•	Trained and supervised clinic staff and managed the data of over 5000 patients
+
+###COMMUNITY HEALTH INTERN | SCHOOL FOR PUBLIC HEALTH EQUITY AND ACTION SOCHARA
+
+•	Conducted 6 sessions on health promotion/disease prevention of anti-tobacco topics for over 300 high school students
+•	Facilitated the training of over 20 health animators and 70 village leaders on environmental determinants in health and sanitation
+
+### DENTAL SURGEON | MULTI-SPECIALTY DENTAL CLINIC
+
+•	Developed diagnosis and treatment plans for more than 500 patients with oral diseases and disorders
+
+## VOLUNTEER WORK	
+
+•	NYC Department of Health and Mental Hygiene Team Epi, 2019: Trained in the outbreak investigation data collection for the Bureau of Communicable Diseases
+•	Association of Persons with Disability, 2018: Assisted and supported the Director of the department of Government Interface, Resource support organization and Policy and Advocacy wing of the organization in documentation
+
+## SKILLS
+
+•	SAS, TreeAge-pro, R, Stata, Microsoft Office (Excel, PowerPoint, Word), HIPAA certified

@@ -1,11 +1,14 @@
 ---
-title: "My awesome website"
-output: 
-  html_document:
-    toc: true
-    toc_float: true
-    theme: cerulean
+title: "Pallavi Krishnamurthy"
+output: html_document
 ---
+<img src="image/my_pic.jpg" style="width:55%">
 
-## This is the landing page for my website - 
-### Ideas - Include a few details about me 
+I am a Masters in Public Health Candidate at [Columbia University Mailman School of public health](https://www.publichealth.columbia.edu/) with a certificate in Comparative effectiveness and outcomes research. 
+
+I am interested in the intersection of epidemiology, health policy and health economics. Through my research I want to tackle issues related to resource allocation and address chronic disease conditions. 
+
+My background is in dentistry and I advocate to bring issues related to burden of oral diseases into mainstream discussions at a global level. 
+
+
+
