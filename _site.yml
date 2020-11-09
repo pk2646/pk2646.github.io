@@ -7,7 +7,7 @@ navbar:
       href: Resume.html
     - text: "plotly"
       href: plotly.html
-    - text: "Dashboard"
+    - text: "dashboard"
       href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<pallavi.krishnamurthy@columbia.edu>
