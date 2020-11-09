@@ -1,23 +1,18 @@
 ---
 title: "Dashboard"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
 ---
 
-# Problem 2 
-
-Look at NYC restaurants data 
-
-```{r setup, include = FALSE}
+```{r setup, include=FALSE}
+library(flexdashboard)
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 ```
-
-
-## Load Instacart dataset.
 
 ```{r load_data, include = FALSE}
 data("rest_inspec")
@@ -30,11 +25,23 @@ nyc_rest_inspec =
   drop_na(score, grade)
 ```
 
-# Plots
+Column {data-width=650}
+-----------------------------------------------------------------------
 
-## Scatterplots
+### Chart A
 
-```{r}
+```{r boxplot}
+nyc_rest_inspec %>% 
+mutate(cuisine_description = fct_reorder(cuisine_description, score)) %>% 
+  plot_ly(y = ~score, color = ~cuisine_description, type = "box", colors = "viridis")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r scatterplot}
 nyc_rest_inspec %>% 
   mutate(text_label = str_c("\nGrade: ", grade, "\nBorough: ", boro)) %>% 
   plot_ly(
@@ -42,23 +49,13 @@ nyc_rest_inspec %>%
     color = ~boro, text = ~text_label, alpha = 0.5)
 ```
 
-## boxplot
+### Chart C
 
-```{r}
-nyc_rest_inspec %>% 
-mutate(cuisine_description = fct_reorder(cuisine_description, score)) %>% 
-  plot_ly(y = ~score, color = ~cuisine_description, type = "box", colors = "viridis")
-```
-
-## Barplot 
-
-```{r}
+```{r bar chart}
 nyc_rest_inspec %>% 
   count(boro, critical_flag) %>% 
   mutate(boro = fct_reorder(boro, n)) %>% 
   plot_ly(x = ~boro, y = ~n, color = ~critical_flag, type = "bar", colors = "viridis")
 ```
-
-
-
+```
 

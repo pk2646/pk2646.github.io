@@ -1,0 +1,68 @@
+---
+title: "Plotly"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Problem 2 
+
+Look at NYC restaurants data 
+
+```{r setup, include = FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+
+## Load Instacart dataset.
+
+```{r load_data, include = FALSE}
+data("rest_inspec")
+
+nyc_rest_inspec = 
+  rest_inspec %>% 
+  sample_n(5000) %>% 
+  select(action, boro, cuisine_description, inspection_date, inspection_type, dba, score, grade, critical_flag) %>% 
+  filter(inspection_type == "Cycle Inspection / Re-inspection") %>% 
+  drop_na(score, grade)
+```
+
+# Plots
+
+## Scatterplots
+
+```{r}
+nyc_rest_inspec %>% 
+  mutate(text_label = str_c("\nGrade: ", grade, "\nBorough: ", boro)) %>% 
+  plot_ly(
+    x = ~inspection_date, y = ~score, type = "scatter", mode = "markers",
+    color = ~boro, text = ~text_label, alpha = 0.5)
+```
+
+The trend over time for restaurant scores pretty consistent. Most of the restaurants get an A grade. Restaurants in queens and brooklyn seem to have a lower score than the rest of the boroughs.
+
+## boxplot
+
+```{r}
+nyc_rest_inspec %>% 
+mutate(cuisine_description = fct_reorder(cuisine_description, score)) %>% 
+  plot_ly(y = ~score, color = ~cuisine_description, type = "box", colors = "viridis")
+```
+
+Pancakes/waffles and german cuisines tend to have lower ratings compared to Amercian and Asian cuisines. 
+
+## Barplot 
+
+```{r}
+nyc_rest_inspec %>% 
+  count(boro, critical_flag) %>% 
+  mutate(boro = fct_reorder(boro, n)) %>% 
+  plot_ly(x = ~boro, y = ~n, color = ~critical_flag, type = "bar", colors = "viridis")
+```
+
+The number of critical violotaions are greater than non-critical violotions among all the boroughs.
+
+
